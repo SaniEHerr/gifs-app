@@ -1,0 +1,21 @@
+<div class="card mb-2 text-center bg-dark">
+
+  <shared-lazy-image
+    [url]="gif.images.downsized_medium.url"
+    [alt]="gif.title || 'No title'"
+  ></shared-lazy-image>
+
+  <!-- Cuando quiero decirle a Angular que el valor de un atributo o elemento HTML es igual a una expresion de JS, tenemos que ponerlos con []. Con esto hacemos el Binding de el valor de una expresion. -->
+  <!-- <img
+    [src]="gif.images.downsized_medium.url"
+    [alt]="gif.title"
+    class="car-img-top"
+  > -->
+
+  <div class="card-body text-white">
+    <p class="card-text">
+      {{ gif.title || 'No title' }}
+    </p>
+  </div>
+
+</div>
